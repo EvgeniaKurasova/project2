@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project2</title>
     <link rel="stylesheet" href="reset.css"/>
+
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
     <link rel="stylesheet" href="style.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,9 +21,15 @@
         <div class="top-navbar">
             <div class="text-in-top-block">
                 <div class="contacts">
-                    <div class="contacts-items"><img src="images/email 1.png"/>Email: Plantingservice@7oroof.com</div>
-                    <div class="contacts-items"><img src="images/phone-call 1.png"/>+01 123456789</div>
-                    <div class="contacts-items"><img src="images/location 1.png"/>2072 Pinnickinick Street, WA 98370</div>
+                    <div class="contacts-items">
+                        <img class="contacts-img" src="images/email 1.png"/><div class="contacts-text">Email: Plantingservice@7oroof.com</div>
+                    </div>
+                    <div class="contacts-items">
+                        <img class="contacts-img" src="images/phone-call 1.png"/><div class="contacts-text">+01 123456789</div>
+                    </div>
+                    <div class="contacts-items">
+                        <img class="contacts-img" src="images/location 1.png"/><div class="contacts-text">2072 Pinnickinick Street, WA 98370</div>
+                    </div>
                 </div>
                 <div class="language-block">
                 <div class="language">English<img class="language-img" src="images/Down Arrow.png"/></div>
@@ -29,9 +39,7 @@
         <div class="navbar">
             <div class="text-in-bottom-block">
                 <div class="logo">
-                    <a href="">
-                        <img src="images/1 LOGO.png" alt="img"/>
-                    </a>
+                    <img class="logo-img" src="images/1 LOGO.png" alt="img"/>
                 </div>
                 <div class="menu-and-button">
                 <ul class="header-menu">
@@ -54,7 +62,10 @@
                         <span><img class="menu-arrowdown arrowdown-black" src="images/arrow icon.png"></span>
                     </li>
                 </ul>
-                <button class="button header-button"><img class="button-img" src="images/phone.png"/>Call Us</button>
+                <button class="button header-button"><img class="button-img" src="images/phone.png"/>
+                    <div class="header-button-text">Call Us</div>
+                </button>
+                <img class="header-menu-img" src="images/menu (1).png">
             </div>
             </div>
         </div>
@@ -63,17 +74,21 @@
     <main>
         <div class="main-top-part">
             <div class="main-text">
-                <div class="sub-heading"><img class="sub-heading-img" src="images/Vector.png">landscape planting services</div>
+                <div class="sub-heading"><img class="sub-heading-img" src="images/Vector.png">
+                    <div class="sub-heading-text">landscape planting services</div></div>
                 <h1 class="main-heading">
                     Perfect Landscape <p class="main-heading green">Solution.</p>
                 </h1>
-                <p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, 
+                <p class="p p-main">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, 
                     luctus nec ullamcorper mattis, pulvinar dapibus leo.
                 </p>
                 <div class="button-text">
                     <button class="button in-left">Get a Quate</button>
+                    <div class="text-and-arrow">
                     <p class="p p-button">See how it works</p>
                     <img class="grey-arrow" src="images/Arrow_Icon_right.png">
+                    <img class="green-arrow" src="images/Vector-green-arrow.png">
+                    </div>
                 </div>
                 <div class="around-info">
                     <div class="around-div"><button class="around-button">500+</button>
@@ -82,10 +97,384 @@
                     Garden Created</div>
                     <div class="around-div"><button class="around-button">100+</button>
                     Team Members</div>
+                    <div class="around-div-call"><button class="around-button">
+                        <div class="around-div-call-text-black">500+</div>
+                        <div class="around-div-call-text">Happy Customrs</div>
+                    </button>
+                    <button class="around-button">
+                        <div class="around-div-call-text-black">800+</div>
+                        <div class="around-div-call-text">Garden Created</div>
+                    </button></div>
                 </div>
             </div>
             <img class="main-photo" src="images/Rectangle 79.png">
         </div>
+        <div class="services">
+            <h1 class="main-heading-services">Services We 
+                <span class="main-heading-services green-services">Provide</span>
+            </h1>
+            <p class="p p-services">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took of type and scrambled it to make a type specimen book.</p>
+            <div class="cards">
+                <div class="card">
+                    <img class="card_imgs card_imgs_web" src="images/Layer 3.png">
+                    <img class="card_imgs card_imgs_call" src="images/Layer-3-w.png">
+                    <img class="card-background" >
+                    <div class="card-text">
+                    <h1 class="card_h1 first-card-h1">Tree Planting</h1>
+                    <p class="p p_card first-p-card">Lorem Ipsum is simply dummy
+                        text of the printing and type setting industry.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card_imgs" src="images/Group.png">
+                    <div class="card-text">
+                    <h1 class="card_h1">Grass Cutting</h1>
+                    <p class="p p_card">Lorem Ipsum is simply dummy
+                        text of the printing and type
+                        setting industry.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card_imgs" src="images/Garden Design.png">
+                    <div class="card-text">
+                    <h1 class="card_h1">Garden Design</h1>
+                    <p class="p p_card">Lorem Ipsum is simply dummy
+                        text of the printing and type
+                        setting industry.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card_imgs" src="images/Plant Growing.png">
+                    <div class="card-text">
+                    <h1 class="card_h1">Plant Growing</h1>
+                    <p class="p p_card">Lorem Ipsum is simply dummy
+                        text of the printing and type
+                        setting industry.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card_imgs" src="images/Glyph.png">
+                    <div class="card-text">
+                    <h1 class="card_h1">Flower Scaping</h1>
+                    <p class="p p_card">Lorem Ipsum is simply dummy
+                        text of the printing and type
+                        setting industry.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card_imgs" src="images/033---Cutting-Branch.png">
+                    <div class="card-text">
+                    <h1 class="card_h1">Branch cutting</h1>
+                    <p class="p p_card">Lorem Ipsum is simply dummy
+                        text of the printing and type
+                        setting industry.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card_imgs" src="images/Glyph_bit.png">
+                    <div class="card-text">
+                    <h1 class="card_h1">Pests, Weeds Control</h1>
+                    <p class="p p_card">Lorem Ipsum is simply dummy
+                        text of the printing and type
+                        setting industry.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card_imgs" src="images/_x30_70---Growing-Money.png">
+                    <div class="card-text">
+                    <h1 class="card_h1">Watering & Irrigation</h1>
+                    <p class="p p_card">Lorem Ipsum is simply dummy
+                        text of the printing and type
+                        setting industry.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="div_about_us">
+            <div class="div_about_us_img">
+                <div class="first-block"></div>
+                <img class="second-block-img" src="images/middle-age.png">
+                <img class="third-block-img" src="images/close-up-hands.png">
+            </div>
+            <div class="div_about_us_text">
+                <h1 class="main-heading main-heading-about">
+                    <p class="main-heading main-heading-about green">25+ Years of Experience <span class="in-black">in</span>
+                    </p>
+                    Gadening & Landscaping</h1>
+                <p class="p p-about-us">Lorem Ipsum is simply dummy text of the printing and typesetting           industry. Lorem 
+                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
+                    unknown printer took a galley of type and scrambled it make a type specimen book.</p>
+                <p class="p p-about-us p-about-us-call-2">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem 
+                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
+                    unknown printer took a galley of type and scrambled it make a type specimen book.
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem 
+                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
+                    unknown printer took a galley of type and scrambled.</p>
+                <div class="green_around_blocks">
+                    <div class="green_around_block">
+                            <img class="green_around-img" src="images/Icon.png">
+                        <div class="green_around_text">Our Mission</div>
+                    </div>
+                    <div class="green_around_block">
+                            <img class="green_around-img" src="images/Icon_hands.png">
+                        <div class="green_around_text">Our Vision</div>
+                    </div>
+                    <div class="green_around_block">
+                            <img class="green_around-img" src="images/Icon_24.png">
+                        <div class="green_around_text">Support Team</div>
+                    </div>
+                    <div class="green_around_block">
+                            <img class="green_around-img" src="images/Icon_hand.png">
+                        <div class="green_around_text">Clients Trust</div>
+                    </div>
+                </div>
+                <button class="button button-block-about">Discover More</button>
+            </div>
+        </div>
+        <div class="why-choose-us">
+            <div class="why-choose-us-text">
+                <h1 class="why-choose-us-h1">Why Choose Us</h1>
+                <p class="why-choose-us-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                    when an unknown printer took a galley of type and scrambled it to make a type 
+                    specimen book.</p>
+                <div class="four-tags">
+                    <div class="tabs">
+                        <div class="tag-around"><img class="tag-img" src="images/Group.pt.png"></div>
+                        <div class="tag-text">Proper Take Care</div>
+                    </div>
+                    <div class="tabs">
+                        <div class="tag-around"><img class="tag-img" src="images/Group.pt.png"></div>
+                        <div class="tag-text">Clean Working</div>
+                    </div>
+                    <div class="tabs">
+                        <div class="tag-around"><img class="tag-img" src="images/Group.pt.png"></div>
+                        <div class="tag-text">Expert Farmer</div>
+                    </div>
+                    <div class="tabs">
+                        <div class="tag-around"><img class="tag-img" src="images/Group.pt.png"></div>
+                        <div class="tag-text">Home Gardening</div>
+                    </div>
+                </div>
+                <button class="button why">Discover More</button>
+            </div>
+            <div class="why-choose-us-img">
+
+            </div>
+        </div>
+        <div class="working-process">
+            <h1 class="working-process-h1 in-black">Working <span class="green">Process</span></h1>
+            <p class="p working-process-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took of type and scrambled it to make a type specimen book.</p>
+            <div class="working-process-cards">
+                <div class="working-process-card">
+                    <div class="working-process-card-imgs">
+                        <img src="images/Consultation.png">
+                        <img src="images/Num1.png">
+                    </div>
+                    <div class="working-process-card-text">
+                        <div class="working-process-card-titl working-process-card-titl-white">Consultation</div>
+                        <p class="p working-process-card-p p-white">Lorem Ipsum is simply dummy of the printing and typesetting test
+                            industry. Lorem Ipsum has been 
+                            the industry's standard.</p>
+                    </div>
+                </div>
+                <div class="working-process-card">
+                    <div class="working-process-card-imgs">
+                        <img src="images/Design & Work.png">
+                        <img src="images/Num2.png">
+                    </div>
+                    <div class="working-process-card-text">
+                        <div class="working-process-card-titl">Design & Work</div>
+                        <p class="p working-process-card-p">Lorem Ipsum is simply dummy of the printing and typesetting test
+                            industry. Lorem Ipsum has been 
+                            the industry's standard.</p>
+                    </div>
+                </div>
+                <div class="working-process-card">
+                    <div class="working-process-card-imgs">
+                        <img src="images/Maint.png">
+                        <img src="images/Num3.png">
+                    </div>
+                    <div class="working-process-card-text">
+                        <div class="working-process-card-titl">Maintenance</div>
+                        <p class="p working-process-card-p">Lorem Ipsum is simply dummy of the printing and typesetting test
+                            industry. Lorem Ipsum has been 
+                            the industry's standard.</p>
+                    </div>
+                </div>
+                <div class="working-process-card">
+                    <div class="working-process-card-imgs">
+                        <img src="images/Complete.png">
+                        <img src="images/Num4.png">
+                    </div>
+                    <div class="working-process-card-text">
+                        <div class="working-process-card-titl">Complete</div>
+                        <p class="p working-process-card-p">Lorem Ipsum is simply dummy of the printing and typesetting test
+                            industry. Lorem Ipsum has been 
+                            the industry's standard.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="what-clients-saying">
+        <div class="bg">
+            <h1 class="what-clients-saying-h1">What <span class="green">Clients Saying</span></h1>
+        <p class="what-clients-saying-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown of type and scrambled it to make a type specimen book.
+        </p>
+        <div class="what-clients-saying-slider">
+            <div class="slider-card-item">
+                <div class="slider-card-img">
+                    <img class="slider-card-img-human" src="images/pngegg (1) 1.png">
+                </div>
+                <div class="slider-card-text">
+                    <p class="slider-card-p">Lorem Ipsum is simply dummy text of the printing 
+                    and typesetting industry. Lorem Ipsum has been 
+                    the industry's standard dummy text ever since the 
+                    1500s, when an unknown printer took a galley of 
+                    type and scrambled it to make.</p>
+                    <div class="slider-card-name-big-block">
+                        <div class="slider-card-name-block">
+                            <div class="slider-card-name">Jane Smith</div>
+                            <div class="slider-card-manager">Manager</div>
+                        </div>
+                        <div class="slider-card-r">
+                            <img src="images/star 3.png">
+                            <img src="images/star 3.png">
+                            <img src="images/star 3.png">
+                            <img src="images/star 3.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-card-item">
+                <div class="slider-card-img">
+                    <img class="slider-card-img-human" src="images/pngegg (1) 1.png">
+                </div>
+                <div class="slider-card-text">
+                    <p class="slider-card-p">Lorem Ipsum is simply dummy text of the printing 
+                    and typesetting industry. Lorem Ipsum has been 
+                    the industry's standard dummy text ever since the 
+                    1500s, when an unknown printer took a galley of 
+                    type and scrambled it to make.</p>
+                    <div class="slider-card-name-big-block">
+                        <div class="slider-card-name-block">
+                            <div class="slider-card-name">Jane Smith</div>
+                            <div class="slider-card-manager">Manager</div>
+                        </div>
+                        <div class="slider-card-r">
+                            <img src="images/star 3.png">
+                            <img src="images/star 3.png">
+                            <img src="images/star 3.png">
+                            <img src="images/star 3.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-card-item">
+                <div class="slider-card-img">
+                    <img class="slider-card-img-human" src="images/pngegg (1) 1.png">
+                </div>
+                <div class="slider-card-text">
+                    <p class="slider-card-p">Lorem Ipsum is simply dummy text of the printing 
+                    and typesetting industry. Lorem Ipsum has been 
+                    the industry's standard dummy text ever since the 
+                    1500s, when an unknown printer took a galley of 
+                    type and scrambled it to make.</p>
+                    <div class="slider-card-name-big-block">
+                        <div class="slider-card-name-block">
+                            <div class="slider-card-name">Jane Smith</div>
+                            <div class="slider-card-manager">Manager</div>
+                        </div>
+                        <div class="slider-card-r">
+                            <img src="images/star 3.png">
+                            <img src="images/star 3.png">
+                            <img src="images/star 3.png">
+                            <img src="images/star 3.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-card-item">
+                <div class="slider-card-img">
+                    <img class="slider-card-img-human" src="images/pngegg (1) 1.png">
+                </div>
+                <div class="slider-card-text">
+                    <p class="slider-card-p">Lorem Ipsum is simply dummy text of the printing 
+                    and typesetting industry. Lorem Ipsum has been 
+                    the industry's standard dummy text ever since the 
+                    1500s, when an unknown printer took a galley of 
+                    type and scrambled it to make.</p>
+                    <div class="slider-card-name-big-block">
+                        <div class="slider-card-name-block">
+                            <div class="slider-card-name">Jane Smith</div>
+                            <div class="slider-card-manager">Manager</div>
+                        </div>
+                        <div class="slider-card-r">
+                            <img src="images/star 3.png">
+                            <img src="images/star 3.png">
+                            <img src="images/star 3.png">
+                            <img src="images/star 3.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-card-item">
+                <div class="slider-card-img">
+                    <img class="slider-card-img-human" src="images/pngegg (1) 1.png">
+                </div>
+                <div class="slider-card-text">
+                    <p class="slider-card-p">Lorem Ipsum is simply dummy text of the printing 
+                    and typesetting industry. Lorem Ipsum has been 
+                    the industry's standard dummy text ever since the 
+                    1500s, when an unknown printer took a galley of 
+                    type and scrambled it to make.</p>
+                    <div class="slider-card-name-big-block">
+                        <div class="slider-card-name-block">
+                            <div class="slider-card-name">Jane Smith</div>
+                            <div class="slider-card-manager">Manager</div>
+                        </div>
+                        <div class="slider-card-r">
+                            <img src="images/star 3.png">
+                            <img src="images/star 3.png">
+                            <img src="images/star 3.png">
+                            <img src="images/star 3.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-card-item">
+                <div class="slider-card-img">
+                    <img class="slider-card-img-human" src="images/pngegg (1) 1.png">
+                </div>
+                <div class="slider-card-text">
+                    <p class="slider-card-p">Lorem Ipsum is simply dummy text of the printing 
+                    and typesetting industry. Lorem Ipsum has been 
+                    the industry's standard dummy text ever since the 
+                    1500s, when an unknown printer took a galley of 
+                    type and scrambled it to make.</p>
+                    <div class="slider-card-name-big-block">
+                        <div class="slider-card-name-block">
+                            <div class="slider-card-name">Jane Smith</div>
+                            <div class="slider-card-manager">Manager</div>
+                        </div>
+                        <div class="slider-card-r">
+                            <img src="images/star 3.png">
+                            <img src="images/star 3.png">
+                            <img src="images/star 3.png">
+                            <img src="images/star 3.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
     </main>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script src="app.js"></script>
 </body>
 </html>
